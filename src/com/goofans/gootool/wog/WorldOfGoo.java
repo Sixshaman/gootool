@@ -45,7 +45,7 @@ public abstract class WorldOfGoo
 
   public static final String GOOMOD_EXTENSION = "goomod";
   protected static final String GOOMOD_EXTENSION_WITH_DOT = "." + GOOMOD_EXTENSION;
-  private static final String USER_CONFIG_FILE = "properties/config.txt";
+  private static final String USER_CONFIG_FILE = "game/properties/config.txt";
 
 
   private static final WorldOfGoo theInstance;

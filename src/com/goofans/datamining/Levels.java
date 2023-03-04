@@ -33,10 +33,10 @@ public class Levels
     WorldOfGoo worldOfGoo = WorldOfGoo.getTheInstance();
     worldOfGoo.init();
 
-    Document textDoc = XMLUtil.loadDocumentFromInputStream(new ByteArrayInputStream(GameFormat.decodeBinFile(worldOfGoo.getGameFile("properties/text.xml.bin"))));
+    Document textDoc = XMLUtil.loadDocumentFromInputStream(new ByteArrayInputStream(GameFormat.decodeBinFile(worldOfGoo.getGameFile("game/properties/text.xml.bin"))));
 
     for (int island = 1; island <= 5; ++island) {
-      Document islandDoc = XMLUtil.loadDocumentFromInputStream(new ByteArrayInputStream(GameFormat.decodeBinFile(worldOfGoo.getGameFile("res/islands/island" + island + ".xml.bin"))));
+      Document islandDoc = XMLUtil.loadDocumentFromInputStream(new ByteArrayInputStream(GameFormat.decodeBinFile(worldOfGoo.getGameFile("game/res/islands/island" + island + ".xml.bin"))));
       NodeList levelList = islandDoc.getElementsByTagName("level");
       for (int i = 0; i < levelList.getLength(); i++) {
         Element levelNode = (Element) levelList.item(i);

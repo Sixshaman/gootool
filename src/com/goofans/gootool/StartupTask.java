@@ -111,7 +111,7 @@ public class StartupTask extends ProgressIndicatingTask
   private void warnIfDemo(WorldOfGoo worldOfGoo)
   {
     try {
-      if (worldOfGoo.getGameFile("res/levels/island3/island3.level.bin").exists()) {
+      if (worldOfGoo.getGameFile("game/res/levels/island3/island3.level").exists()) {
         return;
       }
     }

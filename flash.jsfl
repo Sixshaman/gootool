@@ -9,7 +9,7 @@ fl.outputPanel.clear()
 //var movie = selectMovie();
 var movie = FLfile.read("file:///C|/Dev/gootool/movie/2dboyLogo.movie.xml");
 
-var resourcesXml = FLfile.read("file:///C|/Dev/wog-extracted/res/movie/2dboyLogo/2dboyLogo.resrc.xml");
+var resourcesXml = FLfile.read("file:///C|/Dev/wog-extracted/game/res/movie/2dboyLogo/2dboyLogo.resrc.xml");
 var rootDir = "file:///C|/Games/WorldOfGoo1.30/";
 
 var resources = readResources(resourcesXml, rootDir);
@@ -60,10 +60,10 @@ function processMovie(movie, resources)
 
   doc.frameRate = fps;
 
-  //	var bi = new BitmapItem(rootDir  + "res/movie/Chapter1End/creature.png");
+  //	var bi = new BitmapItem(rootDir  + "game/res/movie/Chapter1End/creature.png");
   //	fl.trace(bi);
   //	doc.library.addNewItem("bitmap", "creature");
-  //var fileUrl = rootDir  + "/res/movie/Chapter1End/creature.png";
+  //var fileUrl = rootDir  + "/game/res/movie/Chapter1End/creature.png";
   //fl.trace(fileUrl);
   //doc.importFile(fileUrl, true);
 

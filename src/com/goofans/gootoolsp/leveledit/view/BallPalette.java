@@ -54,7 +54,7 @@ public class BallPalette extends JComponent implements Scrollable
 
   public void addBalls() throws IOException
   {
-    File ballsDir = WorldOfGoo.getTheInstance().getCustomGameFile("res/balls");
+    File ballsDir = WorldOfGoo.getTheInstance().getCustomGameFile("game/res/balls");
 
     File[] ballsDirs = ballsDir.listFiles();
     int i = 0;

@@ -26,7 +26,7 @@ public class Level
   {
     WorldOfGoo worldOfGoo = WorldOfGoo.getTheInstance();
 
-    String levelPrefix = "res/levels/" + levelName + "/" + levelName;
+    String levelPrefix = "game/res/levels/" + levelName + "/" + levelName;
 
     File sceneFile = worldOfGoo.getGameFile(levelPrefix + ".scene.bin");
     Document sceneDoc = GameFormat.decodeXmlBinFile(sceneFile);
@@ -36,7 +36,7 @@ public class Level
     Document resourcesDoc = GameFormat.decodeXmlBinFile(resourcesFile);
     resources = new Resources(resourcesDoc);
 
-    File levelFile = worldOfGoo.getGameFile(levelPrefix + ".level.bin");
+    File levelFile = worldOfGoo.getGameFile(levelPrefix + ".level");
     Document levelDoc = GameFormat.decodeXmlBinFile(levelFile);
     levelContents = new LevelContents(levelDoc);
   }

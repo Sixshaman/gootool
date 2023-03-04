@@ -4,11 +4,11 @@
   <Resources id="ball_XmasBomb">
 
     <!-- Unique Images -->
-    <SetDefaults path="res/balls/XmasBomb/" idprefix="IMAGE_BALL_XMASBOMB_" />
+    <SetDefaults path="game/res/balls/XmasBomb/" idprefix="IMAGE_BALL_XMASBOMB_" />
     <Image id="BODY"	      path="body"/>
     
     <!-- Images from BombSticky-->
-    <SetDefaults path="res/balls/BombSticky/" idprefix="IMAGE_BALL_XMASBOMB_" />
+    <SetDefaults path="game/res/balls/BombSticky/" idprefix="IMAGE_BALL_XMASBOMB_" />
 
 	<Image id="SPIKES"	      path="spikes"/>
 	<Image id="VALVE"	      path="valve"/>
@@ -26,12 +26,12 @@
 
 
     <!-- Unique Sounds -->
-    <SetDefaults path="res/balls/BombSticky/" idprefix="SOUND_BALL_XMASBOMB_" />
+    <SetDefaults path="game/res/balls/BombSticky/" idprefix="SOUND_BALL_XMASBOMB_" />
 	
 	<Sound id="DETONATE1"    	      	path="detonate1"/>
 	
 	<!-- Shared Sounds -->
-	<SetDefaults path="res/balls/Fuse/" idprefix="SOUND_BALL_XMASBOMB_" />
+	<SetDefaults path="game/res/balls/Fuse/" idprefix="SOUND_BALL_XMASBOMB_" />
 
 	<Sound id="IGNITE01"    	      	path="igniteBurn01"/>
 	<Sound id="IGNITE02"    	      	path="igniteBurn02"/>

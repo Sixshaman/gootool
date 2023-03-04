@@ -35,7 +35,7 @@ So a player that has finished the first two chapters, for example, would
 have flags set to 2|8 = 10 or 1|2|8 = 11 (here '|' indicates bitwise-or).
 
 Then follows, for each level:
-- level id (same as the directory name in res/levels/)
+- level id (same as the directory name in game/res/levels/)
 - greatest number of balls collected
 - least number of moves used
 - least time taken (in seconds)

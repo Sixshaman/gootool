@@ -107,7 +107,7 @@ public class ConfigurationWriterTask extends ProgressIndicatingTask
 
     for (int i = 0; i < filesToCopy.size(); i++) {
       String s = filesToCopy.get(i);
-      if ((configuration.isSkipOpeningMovie() && s.startsWith("res/movie/2dboyLogo")) // If we're skipping the opening movie
+      if ((configuration.isSkipOpeningMovie() && s.startsWith("game/res/movie/2dboyLogo")) // If we're skipping the opening movie
               ) {
         filesToCopy.remove(i);
         i--;
@@ -254,7 +254,7 @@ public class ConfigurationWriterTask extends ProgressIndicatingTask
 
     /* If we're skipping opening movie, we need to remove res/movie/2dboy */
     if (c.isSkipOpeningMovie()) {
-      File movieDir = worldOfGoo.getCustomGameFile("res/movie/2dboyLogo/");
+      File movieDir = worldOfGoo.getCustomGameFile("game/res/movie/2dboyLogo/");
       if (movieDir.exists()) {
         Utilities.rmdirAll(movieDir);
       }
@@ -262,7 +262,7 @@ public class ConfigurationWriterTask extends ProgressIndicatingTask
 
     /* If we have a watermark, we need to modify properties/text.xml.bin */
     if (c.getWatermark().length() > 0) {
-      File textFile = worldOfGoo.getCustomGameFile("properties/text.xml.bin");
+      File textFile = worldOfGoo.getCustomGameFile("game/properties/text.xml.bin");
       try {
         Merger merger = new Merger(textFile, new InputStreamReader(getClass().getResourceAsStream("/watermark.xsl")));
         merger.setTransformParameter("watermark", c.getWatermark());

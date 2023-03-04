@@ -98,8 +98,8 @@ public class Merger
 //    File out = new File(WorldOfGoo.getWogDir(), "res\\levels\\EconomicDivide\\EconomicDivide.level.bin");
 
     FileReader transformReader = new FileReader(new File("resources/watermark.xsl"));
-    File in = worldOfGoo.getGameFile("properties/text.xml.bin");
-    File out = worldOfGoo.getGameFile("properties/newtext.xml.bin");
+    File in = worldOfGoo.getGameFile("game/properties/text.xml.bin");
+    File out = worldOfGoo.getGameFile("game/properties/newtext.xml.bin");
 
     Merger merger = new Merger(in, transformReader);
 

@@ -65,24 +65,24 @@ public class TowerRenderer implements ImageObserver
     WorldOfGoo worldOfGoo = WorldOfGoo.getTheInstance();
 
     // Pick up the images out of the wog folder
-    File ballFile = worldOfGoo.getGameFile("res/balls/Drained/body.png");
+    File ballFile = worldOfGoo.getGameFile("game/res/balls/Drained/body.png");
     ballImage = GameFormat.decodeImage(ballFile);
 
     // Balls need to be nudged so they are centered on the given position.
     ballNudgeX = -(ballImage.getWidth() / 2);
     ballNudgeY = -(ballImage.getHeight() / 2);
 
-    File strandFile = worldOfGoo.getGameFile("res/balls/Drained/spring_goo.png");
+    File strandFile = worldOfGoo.getGameFile("game/res/balls/Drained/spring_goo.png");
     strandImage = GameFormat.decodeImage(strandFile);
 
     // Strands need to be drawn with origin on their start point, and stretched
     strandHeight = strandImage.getHeight();
     strandXOffset = -(strandImage.getWidth() / 2);
 
-    File groundFile = worldOfGoo.getGameFile("res/levels/wogcd/groundTile.png");
+    File groundFile = worldOfGoo.getGameFile("game/res/levels/wogcd/groundTile.png");
     groundImage = GameFormat.decodeImage(groundFile);
 
-    File skyFile = worldOfGoo.getGameFile("res/levels/wogcd/skytile.png");
+    File skyFile = worldOfGoo.getGameFile("game/res/levels/wogcd/skytile.png");
     skyImage = GameFormat.decodeImage(skyFile);
   }
 
@@ -295,7 +295,7 @@ public class TowerRenderer implements ImageObserver
 
   private void rotateTest() throws IOException
   {
-    File strandFile = WorldOfGoo.getTheInstance().getGameFile("res/balls/Drained/spring_goo.png");
+    File strandFile = WorldOfGoo.getTheInstance().getGameFile("game/res/balls/Drained/spring_goo.png");
 
     BufferedImage strandImage = ImageIO.read(strandFile);
 

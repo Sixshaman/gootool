@@ -4,7 +4,7 @@
   <Resources id="ball_XmasIvy">
 
     <!-- Unique Images -->
-    <SetDefaults path="res/balls/Ivy/" idprefix="IMAGE_BALL_XMASIVY_" />
+    <SetDefaults path="game/res/balls/Ivy/" idprefix="IMAGE_BALL_XMASIVY_" />
 
     <Image id="BODY"				path="body"/>
     <Image id="BODYATTACHED"		path="bodyAttached"/>
@@ -16,7 +16,7 @@
     <Image id="LEAVES2"	      		path="leaves2"/>
 	
 	<!-- Common Images -->
-	<SetDefaults path="res/balls/_generic/" idprefix="IMAGE_BALL_XMASIVY_" />
+	<SetDefaults path="game/res/balls/_generic/" idprefix="IMAGE_BALL_XMASIVY_" />
 
     <Image id="DRAGMARKER_P1"		path="dragmarker_80_p1"/>
 	<Image id="DRAGMARKER_P2"		path="dragmarker_80_p2"/>
@@ -25,14 +25,14 @@
 
     
     <!-- Unique Sounds -->
-    <SetDefaults path="res/balls/XmasIvy/" idprefix="SOUND_BALL_XMASIVY_" />
+    <SetDefaults path="game/res/balls/XmasIvy/" idprefix="SOUND_BALL_XMASIVY_" />
 
     <Sound id="GLEE2" path="glee2"/>
     <Sound id="GLEE7" path="glee7"/>
     <Sound id="GLEE9" path="glee9"/>
 
     <!-- Unique Sounds from Ivy -->
-    <SetDefaults path="res/balls/Ivy/" idprefix="SOUND_BALL_XMASIVY_" />
+    <SetDefaults path="game/res/balls/Ivy/" idprefix="SOUND_BALL_XMASIVY_" />
 
     <Sound id="CHIRP01" path="chirp01"/>
     <Sound id="CHIRP02" path="chirp02"/>

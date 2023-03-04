@@ -102,7 +102,7 @@ public class Resources
   public static synchronized Resources getGlobalResources() throws IOException
   {
     if (globalResources == null) {
-      File f = WorldOfGoo.getTheInstance().getCustomGameFile("properties/resources.xml.bin");
+      File f = WorldOfGoo.getTheInstance().getCustomGameFile("game/properties/resources.xml.bin");
       Document doc = GameFormat.decodeXmlBinFile(f);
       globalResources = new Resources(doc);
     }
@@ -115,7 +115,7 @@ public class Resources
     WorldOfGoo worldOfGoo = WorldOfGoo.getTheInstance();
     worldOfGoo.init();
 
-//    File f = worldOfGoo.getCustomGameFile("res/levels/AB3/AB3.resrc.bin");
+//    File f = worldOfGoo.getCustomGameFile("game/res/levels/AB3/AB3.resrc.bin");
 //    Document doc = GameFormat.decodeXmlBinFile(f);
 //    Resources res = new Resources(doc);
 

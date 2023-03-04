@@ -74,10 +74,10 @@ public class MacBinFormat
   @SuppressWarnings({"HardCodedStringLiteral", "UseOfSystemOutOrSystemErr", "DuplicateStringLiteralInspection"})
   public static void main(String[] args) throws IOException
   {
-    String s = new String(decodeFile(new File("IvyTower.level.bin")), GameFormat.DEFAULT_CHARSET);
+    String s = new String(decodeFile(new File("IvyTower.level")), GameFormat.DEFAULT_CHARSET);
     System.out.println("s = " + s);
 
-    byte[] inputBytes = Utilities.readFile(new File("IvyTower.level.bin"));
+    byte[] inputBytes = Utilities.readFile(new File("IvyTower.level"));
     System.out.print(new String(decode(encode(decode(inputBytes)))));
 
   }

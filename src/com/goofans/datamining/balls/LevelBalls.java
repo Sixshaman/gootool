@@ -35,7 +35,7 @@ public class LevelBalls
 
 //    System.out.println("\n==== BY LEVEL ====\n");
 
-    final File levelsDir = wog.getGameFile("res/levels/");
+    final File levelsDir = wog.getGameFile("game/res/levels/");
 
     for (File file : levelsDir.listFiles()) {
       if (file.isDirectory()) {
@@ -43,7 +43,7 @@ public class LevelBalls
 
 //        System.out.println("Level " + levelName);
 
-        final byte[] xmlBytes = GameFormat.decodeBinFile(new File(file, levelName + ".level.bin"));
+        final byte[] xmlBytes = GameFormat.decodeBinFile(new File(file, levelName + ".level"));
         final Document doc = XMLUtil.loadDocumentFromInputStream(new ByteArrayInputStream(xmlBytes));
 
         final XPath xPath = XPathFactory.newInstance().newXPath();

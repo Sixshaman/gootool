@@ -233,7 +233,7 @@ public class AESBinFormat
     WorldOfGoo worldOfGoo = WorldOfGoo.getTheInstance();
     worldOfGoo.init();
 
-    byte[] decoded = decodeFile(worldOfGoo.getGameFile("properties/text.xml.bin"));
+    byte[] decoded = decodeFile(worldOfGoo.getGameFile("game/properties/text.xml.bin"));
 
 //    Document doc = XMLUtil.loadDocumentFromInputStream(new ByteArrayInputStream(s.getBytes()));
     Document doc = XMLUtil.loadDocumentFromInputStream(new ByteArrayInputStream(decoded));
@@ -241,7 +241,7 @@ public class AESBinFormat
 
     TESTMODE = true;
 
-    testFile("properties/resources.xml.bin");
+    testFile("game/properties/resources.xml.bin");
 //    testFile("res\\levels\\GoingUp\\GoingUp.level.bin");
 //    testFile("res\\levels\\GoingUp\\GoingUp.resrc.bin");
 //    testFile("res\\levels\\GoingUp\\GoingUp.scene.bin");

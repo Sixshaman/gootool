@@ -38,7 +38,7 @@ public class Ball
   public Ball(String ballName) throws IOException
   {
     this.ballName = ballName;
-    File ballDir = WorldOfGoo.getTheInstance().getCustomGameFile("res/balls/" + ballName);
+    File ballDir = WorldOfGoo.getTheInstance().getCustomGameFile("game/res/balls/" + ballName);
     if (!ballDir.isDirectory()) {
       throw new IOException("Ball dir " + ballDir + " doesn't exist");
     }

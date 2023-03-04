@@ -3,7 +3,7 @@
 
   <process-image>
     <source>images_continue.png</source>
-    <dest>res/images/continue_up</dest>
+    <dest>game/res/images/continue_up</dest>
 
     <draw>
       <fixed-position x="82" x-justify="center" y="23" y-justify="bottom"/>
@@ -26,7 +26,7 @@
 
   <process-image>
     <source>images_continue.png</source>
-    <dest>res/images/continue_over</dest>
+    <dest>game/res/images/continue_over</dest>
 
     <draw>
       <fixed-position x="82" y="23" y-justify="bottom"/>
@@ -65,7 +65,7 @@
 
   <process-image>
     <source>levels_wogc_buttonConnect_over.png</source>
-    <dest>res/levels/wogc/buttonConnect_over</dest>
+    <dest>game/res/levels/wogc/buttonConnect_over</dest>
 
     <draw>
       <fit-to-box x="8" y="43" width="90" height="24" allow-grow="false"/>
@@ -80,7 +80,7 @@
 
   <process-image>
     <source>levels_wogc_buttonConnect_up.png</source>
-    <dest>res/levels/wogc/buttonConnect_up</dest>
+    <dest>game/res/levels/wogc/buttonConnect_up</dest>
 
     <draw>
       <fit-to-box x="8" y="43" width="90" height="24" allow-grow="false"/>
@@ -96,7 +96,7 @@
   <!-- SassyFrassy.ttf from http://1000wordsphotography.typepad.com/allie/s.html -->
   <process-image>
     <source>tutorialPost.png</source>
-    <dest>res/levels/GoingUp/tutorialPost</dest>
+    <dest>game/res/levels/GoingUp/tutorialPost</dest>
 
     <draw>
       <fit-to-box x="16" y="52" width="220" height="40" x-justify="left" allow-grow="false"/>

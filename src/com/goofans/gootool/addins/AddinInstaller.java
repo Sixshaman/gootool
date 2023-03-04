@@ -35,7 +35,7 @@ public class AddinInstaller
 {
   private static final Logger log = Logger.getLogger(AddinInstaller.class.getName());
 
-  private static final String[] ALLOWED_ROOT_DIRS = new String[]{"properties/", "res/"};
+  private static final String[] ALLOWED_ROOT_DIRS = new String[]{"game/properties/", "game/res/"};
 
   private static final String STRINGS_FILE = "text.xml";
   private static final String GOOMOD_DIR_OVERRIDE = "override/";
@@ -244,7 +244,7 @@ public class AddinInstaller
 
     /* First add our two level strings to text.xml */
 
-    File textFile = WorldOfGoo.getTheInstance().getCustomGameFile("properties/text.xml.bin");
+    File textFile = WorldOfGoo.getTheInstance().getCustomGameFile("game/properties/text.xml.bin");
     try {
       Merger merger = new Merger(textFile, new InputStreamReader(AddinInstaller.class.getResourceAsStream("/level-text.xsl"), "UTF-8"));
       merger.setTransformParameter("level_name_string", makeString(levelNameId, level.getNames()));
@@ -259,7 +259,7 @@ public class AddinInstaller
 
     /* Now add ourselves into the island.xml */
 
-    File islandFile = WorldOfGoo.getTheInstance().getCustomGameFile("res/islands/island1.xml.bin");
+    File islandFile = WorldOfGoo.getTheInstance().getCustomGameFile("game/res/islands/island1.xml.bin");
     try {
       Merger merger = new Merger(islandFile, new InputStreamReader(AddinInstaller.class.getResourceAsStream("/level-island.xsl"), "UTF-8"));
 
@@ -283,7 +283,7 @@ public class AddinInstaller
     }
 
     /* Now add our buttons to island1.scene.xml */
-    File islandSceneFile = WorldOfGoo.getTheInstance().getCustomGameFile("res/levels/island1/island1.scene.bin");
+    File islandSceneFile = WorldOfGoo.getTheInstance().getCustomGameFile("game/res/levels/island1/island1.scene.bin");
     try {
       Merger merger = new Merger(islandSceneFile, new InputStreamReader(AddinInstaller.class.getResourceAsStream("/level-island-scene.xsl"), "UTF-8"));
 
@@ -323,7 +323,7 @@ public class AddinInstaller
   private static void doStringsFile(Addin addin, InputStream inputStream) throws IOException, AddinFormatException
   {
     // Load game text.xml
-    File gameTextFile = WorldOfGoo.getTheInstance().getCustomGameFile("properties/text.xml.bin");
+    File gameTextFile = WorldOfGoo.getTheInstance().getCustomGameFile("game/properties/text.xml.bin");
     Document gameStringsDoc = XMLUtil.loadDocumentFromInputStream(new ByteArrayInputStream(GameFormat.decodeBinFile(gameTextFile)));
 
     gameStringsDoc.getDocumentElement().appendChild(gameStringsDoc.createTextNode("\n"));
