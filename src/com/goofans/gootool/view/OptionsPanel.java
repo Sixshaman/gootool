@@ -57,9 +57,38 @@ public class OptionsPanel implements ViewComponent
   private HyperlinkLabel windowsVolumeControlHyperlink;
   private JCheckBox disableBillboardsCheckBox;
   private JComboBox refreshRateCombo;
+  private JLabel resolutionLabel;
+  private JLabel uiInsetLabel;
+  private JLabel refreshRateLabel;
+  private JLabel installationLabel;
+  private JLabel customWorldOfGooLabel;
+  private JLabel profileLabel;
+  private JLabel watermarkLabel;
+  private JLabel usernameLabel;
+  private JLabel passwordLabel;
+  private JTextPane gooFansLoginHint;
+  private JLabel languageLabel;
 
   public OptionsPanel(Controller controller)
   {
+    resolutionLabel.setText(GooTool.getTextProvider().getString("options.display.resolution"));
+    uiInsetLabel.setText(GooTool.getTextProvider().getString("options.display.uiInset"));
+    refreshRateLabel.setText(GooTool.getTextProvider().getString("options.display.refreshrate"));
+    installationLabel.setText(GooTool.getTextProvider().getString("options.locations.gooDir"));
+    customWorldOfGooLabel.setText(GooTool.getTextProvider().getString("options.locations.customDir"));
+    profileLabel.setText(GooTool.getTextProvider().getString("options.locations.profile"));
+    watermarkLabel.setText(GooTool.getTextProvider().getString("options.loadScreen.watermark"));
+    usernameLabel.setText(GooTool.getTextProvider().getString("options.goofans.username"));
+    passwordLabel.setText(GooTool.getTextProvider().getString("options.goofans.password"));
+    languageLabel.setText(GooTool.getTextProvider().getString("options.language.language"));
+
+    allowWidescreen.setText(GooTool.getTextProvider().getString("options.display.widescreen"));
+    windowsVolumeControlCheckBox.setText(GooTool.getTextProvider().getString("options.sound.controls"));
+    skipOpeningMovieCheckBox.setText(GooTool.getTextProvider().getString("options.loadScreen.skipMovie"));
+    disableBillboardsCheckBox.setText(GooTool.getTextProvider().getString("options.billboards.disable"));
+
+    gooFansLoginButton.setText(GooTool.getTextProvider().getString("options.goofans.login"));
+
     for (Language language : Language.getSupportedLanguages()) {
       languageCombo.addItem(language);
     }

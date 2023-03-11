@@ -58,6 +58,7 @@ public class AddinsPanel implements ViewComponent, PropertyChangeListener
   private HyperlinkLabel findMoreHyperlink;
   private StarBar ratingBar;
   private JButton updateCheckButton;
+  private JLabel hintLabel;
   private final AddinsTableModel addinsModel;
 
   private final Controller controller;
@@ -80,6 +81,17 @@ public class AddinsPanel implements ViewComponent, PropertyChangeListener
 
   public AddinsPanel(Controller controller)
   {
+    hintLabel.setText(GooTool.getTextProvider().getString("addins.message"));
+
+    installButton.setText(GooTool.getTextProvider().getString("addins.install"));
+    updateCheckButton.setText(GooTool.getTextProvider().getString("addins.updateCheck"));
+    enableButton.setText(GooTool.getTextProvider().getString("addins.enable"));
+    disableButton.setText(GooTool.getTextProvider().getString("addins.disable"));
+    uninstallButton.setText(GooTool.getTextProvider().getString("addins.uninstall"));
+    moveUpButton.setText(GooTool.getTextProvider().getString("addins.moveup"));
+    propertiesButton.setText(GooTool.getTextProvider().getString("addins.properties"));
+    moveDownButton.setText(GooTool.getTextProvider().getString("addins.movedown"));
+
     this.controller = controller;
     addinsModel = new AddinsTableModel();
 

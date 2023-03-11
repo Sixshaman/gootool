@@ -63,6 +63,15 @@ public final class ProfilePanel implements ActionListener, ViewComponent
   private JButton profileBackupButton;
   private JButton profileRestoreButton;
   private JButton profilePublishButton;
+    private JLabel selectProfileLabel;
+  private JLabel nameLabel;
+  private JLabel playTimeLabel;
+  private JLabel levelsPlayedLabel;
+  private JLabel flagsLabel;
+  private JLabel heightLabel;
+  private JLabel ballsLabel;
+  private JLabel nodeBallsLabel;
+  private JLabel strandBallsLabel;
 
   private static final String CMD_REFRESH = "REFRESH";
   private static final String CMD_PROFILE_CHANGED = "PROFILE_CHANGED";
@@ -96,6 +105,22 @@ public final class ProfilePanel implements ActionListener, ViewComponent
 
   public ProfilePanel(Controller controller)
   {
+    selectProfileLabel.setText(GooTool.getTextProvider().getString("profile.select"));
+    nameLabel.setText(GooTool.getTextProvider().getString("profile.info.name"));
+    playTimeLabel.setText(GooTool.getTextProvider().getString("profile.info.playTime"));
+    levelsPlayedLabel.setText(GooTool.getTextProvider().getString("profile.info.levelsPlayed"));
+    flagsLabel.setText(GooTool.getTextProvider().getString("profile.info.flags"));
+    heightLabel.setText(GooTool.getTextProvider().getString("profile.tower.height"));
+    ballsLabel.setText(GooTool.getTextProvider().getString("profile.tower.balls"));
+    nodeBallsLabel.setText(GooTool.getTextProvider().getString("profile.tower.nodeBalls"));
+    strandBallsLabel.setText(GooTool.getTextProvider().getString("profile.tower.strandBalls"));
+
+    saveTowerButton.setText(GooTool.getTextProvider().getString("profile.tower.saveimage"));
+    profileBackupButton.setText(GooTool.getTextProvider().getString("profile.goofans.backup"));
+    profileRestoreButton.setText(GooTool.getTextProvider().getString("profile.goofans.restore"));
+    profilePublishButton.setText(GooTool.getTextProvider().getString("profile.goofans.publish"));
+    refreshButton.setText(GooTool.getTextProvider().getString("profile.refresh"));
+
     propertyChangeSupport = new PropertyChangeSupport(this);
 
     refreshButton.setActionCommand(CMD_REFRESH);

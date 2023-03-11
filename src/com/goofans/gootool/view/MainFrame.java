@@ -83,9 +83,11 @@ public class MainFrame extends JFrame implements ViewComponent
       }
     });
 
+    saveAndLaunchButton.setText(GooTool.getTextProvider().getString("mainFrame.saveAndLaunch"));
     saveAndLaunchButton.setActionCommand(Controller.CMD_SAVE_AND_LAUNCH);
     saveAndLaunchButton.addActionListener(controller);
 
+    saveButton.setText(GooTool.getTextProvider().getString("mainFrame.save"));
     saveButton.setActionCommand(Controller.CMD_SAVE);
     saveButton.addActionListener(controller);
 

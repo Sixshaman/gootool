@@ -34,22 +34,22 @@
             <properties/>
             <border type="none" title-resource-bundle="text" title-key="options.display.title"/>
             <children>
-              <component id="e6d1c" class="javax.swing.JLabel">
+              <component id="e6d1c" class="javax.swing.JLabel" binding="resolutionLabel">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <labelFor value="6f92a"/>
-                  <text resource-bundle="text" key="options.display.resolution"/>
+                  <text value="&amp;Resolution"/>
                 </properties>
               </component>
-              <component id="c35b6" class="javax.swing.JLabel">
+              <component id="c35b6" class="javax.swing.JLabel" binding="uiInsetLabel">
                 <constraints>
                   <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <labelFor value="99ade"/>
-                  <text resource-bundle="text" key="options.display.uiInset"/>
+                  <text value="UI &amp;Inset"/>
                 </properties>
               </component>
               <grid id="ec2ed" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -103,16 +103,16 @@
                   <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="text" key="options.display.widescreen"/>
+                  <text value="Allow &amp;widescreen resolutions"/>
                 </properties>
               </component>
-              <component id="b0e99" class="javax.swing.JLabel">
+              <component id="b0e99" class="javax.swing.JLabel" binding="refreshRateLabel">
                 <constraints>
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <labelFor value="da5fb"/>
-                  <text resource-bundle="text" key="options.display.refreshrate"/>
+                  <text value="R&amp;efresh Rate"/>
                 </properties>
               </component>
               <grid id="6874b" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -146,13 +146,13 @@
             <properties/>
             <border type="none" title-resource-bundle="text" title-key="options.locations.title"/>
             <children>
-              <component id="512b7" class="javax.swing.JLabel">
+              <component id="512b7" class="javax.swing.JLabel" binding="installationLabel">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <labelFor value="f88e1"/>
-                  <text resource-bundle="text" key="options.locations.gooDir"/>
+                  <text value="World of Goo Installation"/>
                 </properties>
               </component>
               <hspacer id="67022">
@@ -179,13 +179,13 @@
                   <text value="..."/>
                 </properties>
               </component>
-              <component id="1b057" class="javax.swing.JLabel">
+              <component id="1b057" class="javax.swing.JLabel" binding="customWorldOfGooLabel">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <labelFor value="fe976"/>
-                  <text resource-bundle="text" key="options.locations.customDir"/>
+                  <text value="Custom World of Goo"/>
                 </properties>
               </component>
               <component id="fe976" class="javax.swing.JTextField" binding="customDirText">
@@ -207,13 +207,13 @@
                   <text value="..."/>
                 </properties>
               </component>
-              <component id="8c7b8" class="javax.swing.JLabel">
+              <component id="8c7b8" class="javax.swing.JLabel" binding="profileLabel">
                 <constraints>
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <labelFor value="9b00"/>
-                  <text resource-bundle="text" key="options.locations.profile"/>
+                  <text value="Profile"/>
                 </properties>
               </component>
               <component id="9b00" class="javax.swing.JTextField" binding="profileFileText">
@@ -250,7 +250,7 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="text" key="options.sound.controls"/>
+                  <text value="Enable in-game volume &amp;controls"/>
                 </properties>
               </component>
               <hspacer id="1875e">
@@ -258,7 +258,7 @@
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
               </hspacer>
-              <component id="bab29" class="com.goofans.gootool.ui.HyperlinkLabel" binding="windowsVolumeControlHyperlink" custom-create="true">
+              <component id="34039" class="com.goofans.gootool.ui.HyperlinkLabel" binding="windowsVolumeControlHyperlink" custom-create="true">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -279,16 +279,16 @@
                   <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="text" key="options.loadScreen.skipMovie"/>
+                  <text value="&amp;Skip Opening Movie"/>
                 </properties>
               </component>
-              <component id="1153d" class="javax.swing.JLabel">
+              <component id="1153d" class="javax.swing.JLabel" binding="watermarkLabel">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <labelFor value="763fe"/>
-                  <text resource-bundle="text" key="options.loadScreen.watermark"/>
+                  <text value="Water&amp;mark"/>
                 </properties>
               </component>
               <grid id="5cfb6" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -334,13 +334,13 @@
             <properties/>
             <border type="none" title-resource-bundle="text" title-key="options.goofans.title"/>
             <children>
-              <component id="5c116" class="javax.swing.JLabel">
+              <component id="5c116" class="javax.swing.JLabel" binding="usernameLabel">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <labelFor value="495d"/>
-                  <text resource-bundle="text" key="options.goofans.username"/>
+                  <text value="&amp;Username"/>
                 </properties>
               </component>
               <hspacer id="eb7cd">
@@ -356,13 +356,13 @@
                 </constraints>
                 <properties/>
               </component>
-              <component id="a5a17" class="javax.swing.JLabel">
+              <component id="a5a17" class="javax.swing.JLabel" binding="passwordLabel">
                 <constraints>
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <labelFor value="3ccda"/>
-                  <text resource-bundle="text" key="options.goofans.password"/>
+                  <text value="&amp;Password"/>
                 </properties>
               </component>
               <component id="3ccda" class="javax.swing.JPasswordField" binding="goofansPassword">
@@ -388,7 +388,7 @@
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <text resource-bundle="text" key="options.goofans.login"/>
+                      <text value="L&amp;ogin"/>
                     </properties>
                   </component>
                   <hspacer id="fe250">
@@ -398,7 +398,7 @@
                   </hspacer>
                 </children>
               </grid>
-              <component id="7689a" class="javax.swing.JTextPane" default-binding="true">
+              <component id="7689a" class="javax.swing.JTextPane">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="50"/>
@@ -425,13 +425,13 @@
             <properties/>
             <border type="none" title-resource-bundle="text" title-key="options.language.title"/>
             <children>
-              <component id="79831" class="javax.swing.JLabel">
+              <component id="79831" class="javax.swing.JLabel" binding="languageLabel">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <labelFor value="dad8e"/>
-                  <text resource-bundle="text" key="options.language.language"/>
+                  <text value="&amp;Language"/>
                 </properties>
               </component>
               <grid id="f053c" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -472,7 +472,7 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text resource-bundle="text" key="options.billboards.disable"/>
+                  <text value="Disable new &amp;billboards in WoGC"/>
                 </properties>
               </component>
               <vspacer id="d282f">
