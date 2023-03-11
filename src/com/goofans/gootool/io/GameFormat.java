@@ -6,6 +6,7 @@
 package com.goofans.gootool.io;
 
 import com.goofans.gootool.platform.PlatformSupport;
+import com.goofans.gootool.util.Utilities;
 import com.goofans.gootool.util.XMLUtil;
 
 import java.awt.image.BufferedImage;
@@ -70,6 +71,9 @@ public class GameFormat
   public static byte[] decodeProfileFile(File file) throws IOException
   {
     log.finest("decode profile file: " + file);
+    return Utilities.readFile(file);
+
+    /*
 
     byte[] decoded = null;
     switch (PlatformSupport.getPlatform()) {
@@ -81,7 +85,8 @@ public class GameFormat
         decoded = MacBinFormat.decodeFile(file);
         break;
     }
-    return decoded;
+
+    */
   }
 
   public static void encodeProfileFile(File file, byte[] input) throws IOException

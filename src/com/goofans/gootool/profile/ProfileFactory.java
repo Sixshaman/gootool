@@ -25,7 +25,7 @@ public class ProfileFactory
 {
   private static final Logger log = Logger.getLogger(ProfileFactory.class.getName());
 
-  private static final String PROFILE_DAT_FILENAME = "pers2.dat";
+  private static final String PROFILE_DAT_FILENAME = "pers3.dat";
   private static final String PREF_PROFILE_FILE = "profile_file";
 
   private static File profileFile;
