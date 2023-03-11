@@ -99,6 +99,12 @@
   <property name="output.dir" value="${build.dir}/compiled"/>
   <property name="output.jar" value="${build.dir}/gootool.jar"/>
 
+  <unjar src="${idea.home}/forms_rt.jar" dest="${output.dir}">
+    <patternset>
+      <include name="**/*.class"/>
+    </patternset>
+  </unjar>
+
   <property name="build.properties" value="${output.dir}/build.properties"/>
 
 
